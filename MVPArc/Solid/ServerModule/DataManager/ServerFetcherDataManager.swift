@@ -8,23 +8,32 @@
 import Foundation
 
 
-class FetcherDataManager {
+class ServerFetcherDataManager: FetcherDataProtocol {
     
-    //Get Countries From API
-    let storage = MoyaManager()
+    var storage: StorageManangerProtocol = MoyaManager()
     var parserHandler: ParseDataHanlder? = ParseDataHanlder()
 
+    init() {}
+    init(storage: StorageManangerProtocol? = nil, parserType: ParseType? = nil) {
+        if (storage != nil) {
+            self.storage = storage!
+        }
+        if(parserType != nil) {            
+            parserHandler = ParseDataHanlder.init(type: parserType!)
+        }
+    }
+    //Get Countries From API
+    
     func getCountries(request: [String: Any]? = nil, completionHandler: @escaping (Result<[[String: Any]], ServerError>) -> Void) {
         let arequest = ServerRequest()
-        arequest.apiName = .getCountries
+        arequest.apiName = "getCountries"
         arequest.baseURL = "https://testapp.sofood.co.il"
         arequest.apiPath = "/api/clients/countries"
-        arequest.apiUrl = "https://testapp.sofood.co.il/api/clients/countries"
+        arequest.apiUrl = arequest.baseURL! + arequest.apiPath!
         arequest.method = .get
         arequest.paramters = request
         let response = ServerResponse()
-        response.success = { [weak self] receivedData in
-            guard let self = self else { return }
+        response.success = { receivedData in
             let json = self.parserHandler?.parse(data: receivedData!)
             let data = json?["data"] as? [String: Any]
             let countries = data?["countries"] as? [[String: Any]]
@@ -38,10 +47,10 @@ class FetcherDataManager {
     
     func getCountries2(request: [String: Any]? = nil, completionHandler: @escaping (Result<[[String: Any]], ServerError>) -> Void) {
         let arequest = ServerRequest()
-        arequest.apiName = .getCountries
+        arequest.apiName = "getCountries"
         arequest.baseURL = "https://testapp.sofood.co.il"
         arequest.apiPath = "/api/clients/countries"
-        arequest.apiUrl = "https://testapp.sofood.co.il/api/clients/coufafaffafantries"
+        arequest.apiUrl = arequest.baseURL! + arequest.apiPath!
         arequest.method = .get
         arequest.paramters = request
         let response = ServerResponse()

@@ -47,25 +47,15 @@ struct ApiRequestMoya: TargetType {
 }
 
 
-class MoyaManager {
+class MoyaManager: StorageManangerProtocol {
     
-    let errorHandler = ErrorAPIHandler()
-    let provider = MoyaProvider<ApiRequestMoya>.init()
-
-    static func getMethod(method: HttpMethod?) -> Moya.Method {
-        switch method {
-        case .get:
-            return .get
-        case .post:
-            return .post
-        case .delete:
-            return .delete
-        case .put:
-            return .put
-        case .none:
-            return Moya.Method.get
-        }
+    init() {}
+    init(errorHandler: ErrorAPIHandler) {
+        self.errorHandler  = errorHandler
     }
+    
+    var errorHandler = ErrorAPIHandler()
+    let provider = MoyaProvider<ApiRequestMoya>.init()
     
     func request(request: ServerRequest? = nil, response: ServerResponse){
         provider.request(ApiRequestMoya.init(request: request)) { result in
@@ -85,4 +75,21 @@ class MoyaManager {
         
     }
     
+}
+
+extension MoyaManager {
+    static func getMethod(method: HttpMethod?) -> Moya.Method {
+        switch method {
+        case .get:
+            return .get
+        case .post:
+            return .post
+        case .delete:
+            return .delete
+        case .put:
+            return .put
+        case .none:
+            return Moya.Method.get
+        }
+    }
 }

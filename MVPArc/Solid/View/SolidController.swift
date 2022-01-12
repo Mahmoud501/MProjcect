@@ -11,11 +11,11 @@ class SolidController {
     
     var list = [[String: Any]]()
     
-    var Fetcher = FetcherDataManager()
     
-    func getCountries (success: (()->())?, error: ((String)->())?) {
+    
+    private func getCountries (fetcher: FetcherDataProtocol?,success: (()->())?, error: ((String)->())?) {
 
-        Fetcher.getCountries() { result in
+        fetcher?.getCountries(request: nil) { result in
             switch result {
             case .success(let data):
                 self.list = data
@@ -27,6 +27,15 @@ class SolidController {
                 break
             }
         }
+    }
+        
+    
+    func getCoutriesFromServer(isMoya: Bool = false,success: (()->())?, error: ((String)->())?) {
+        getCountries(fetcher: ServerFetcherDataManager(storage: isMoya ? MoyaManager() : AlamofireManager()), success: success, error: error)
+    }
+    
+    func getFromCountriesFIB(success: (()->())?, error: ((String)->())?) {
+        getCountries(fetcher: FIBFetcherDataManager(), success: success, error: error)
     }
     
 }

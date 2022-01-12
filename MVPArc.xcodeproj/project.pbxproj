@@ -10,19 +10,28 @@
 		4C2C8C7C9A65C0383A311650 /* Pods_MVPArc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7547C44A9EC3BA4F1AE92184 /* Pods_MVPArc.framework */; };
 		B7A2AAC827887F45009D581C /* CountryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A2AAC727887F45009D581C /* CountryListViewController.swift */; };
 		B7A2AACB27888EF3009D581C /* SolidVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A2AACA27888EF3009D581C /* SolidVC.swift */; };
-		B7A2AACD27888F42009D581C /* FetcherDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A2AACC27888F42009D581C /* FetcherDataManager.swift */; };
+		B7A2AACD27888F42009D581C /* ServerFetcherDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A2AACC27888F42009D581C /* ServerFetcherDataManager.swift */; };
 		B7A2AACF27889471009D581C /* ParseProcotol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A2AACE27889471009D581C /* ParseProcotol.swift */; };
 		B7A2AAD227890BD4009D581C /* SolidController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A2AAD127890BD4009D581C /* SolidController.swift */; };
 		B7A2AAD427890EC9009D581C /* ErrorServerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A2AAD327890EC9009D581C /* ErrorServerHandler.swift */; };
 		B7A2AAD6278920CC009D581C /* AlamofireManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A2AAD5278920CC009D581C /* AlamofireManager.swift */; };
 		B7A2AAD827892172009D581C /* ServerErrorTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A2AAD727892172009D581C /* ServerErrorTypes.swift */; };
-		B7A2AADD278938D2009D581C /* FirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A2AADC278938D2009D581C /* FirestoreManager.swift */; };
-		B7A2AAE327894ACF009D581C /* ServerEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A2AAE227894ACF009D581C /* ServerEntities.swift */; };
+		B7A2AADD278938D2009D581C /* FIBFetcherDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A2AADC278938D2009D581C /* FIBFetcherDataManager.swift */; };
+		B7A2AAE327894ACF009D581C /* ServerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A2AAE227894ACF009D581C /* ServerRequest.swift */; };
 		B7A2AAE5278950C4009D581C /* MoyaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A2AAE4278950C4009D581C /* MoyaManager.swift */; };
 		B7A2AAE7278957BE009D581C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B7A2AAE6278957BE009D581C /* GoogleService-Info.plist */; };
 		B7A2AAEC2789BB83009D581C /* ParseJsonHanlder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A2AAEB2789BB83009D581C /* ParseJsonHanlder.swift */; };
 		B7A2AAEE2789BBD8009D581C /* ParseXMLHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A2AAED2789BBD8009D581C /* ParseXMLHandler.swift */; };
 		B7A2AAF02789BCCE009D581C /* ParseDataHanlder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A2AAEF2789BCCE009D581C /* ParseDataHanlder.swift */; };
+		B7A2AAF5278A3775009D581C /* StorageManangerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A2AAF4278A3775009D581C /* StorageManangerProtocol.swift */; };
+		B7A2AAF8278A3847009D581C /* ServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A2AAF7278A3847009D581C /* ServerResponse.swift */; };
+		B7A2AAFB278A3921009D581C /* FetcherDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A2AAFA278A3921009D581C /* FetcherDataProtocol.swift */; };
+		B7A2AAFD278A3BA5009D581C /* FirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A2AAFC278A3BA5009D581C /* FirestoreManager.swift */; };
+		B7A2AB02278A3D4C009D581C /* FIBRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A2AB01278A3D4C009D581C /* FIBRequest.swift */; };
+		B7A2AB04278A3D54009D581C /* FIBResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A2AB03278A3D54009D581C /* FIBResponse.swift */; };
+		B7A2AB06278A3F56009D581C /* FBManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A2AB05278A3F56009D581C /* FBManagerProtocol.swift */; };
+		B7A2AB08278A3FAA009D581C /* HttpMethodTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A2AB07278A3FAA009D581C /* HttpMethodTypes.swift */; };
+		B7A2AB0A278A49A4009D581C /* OldFirebaseManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A2AB09278A49A3009D581C /* OldFirebaseManger.swift */; };
 		B7D97B3427805B72005C9114 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D97B3327805B72005C9114 /* AppDelegate.swift */; };
 		B7D97B3627805B72005C9114 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D97B3527805B72005C9114 /* SceneDelegate.swift */; };
 		B7D97B3827805B72005C9114 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D97B3727805B72005C9114 /* ViewController.swift */; };
@@ -44,19 +53,28 @@
 		8A98E60343BC15557D8B2024 /* Pods-MVPArc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVPArc.release.xcconfig"; path = "Target Support Files/Pods-MVPArc/Pods-MVPArc.release.xcconfig"; sourceTree = "<group>"; };
 		B7A2AAC727887F45009D581C /* CountryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListViewController.swift; sourceTree = "<group>"; };
 		B7A2AACA27888EF3009D581C /* SolidVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolidVC.swift; sourceTree = "<group>"; };
-		B7A2AACC27888F42009D581C /* FetcherDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetcherDataManager.swift; sourceTree = "<group>"; };
+		B7A2AACC27888F42009D581C /* ServerFetcherDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerFetcherDataManager.swift; sourceTree = "<group>"; };
 		B7A2AACE27889471009D581C /* ParseProcotol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseProcotol.swift; sourceTree = "<group>"; };
 		B7A2AAD127890BD4009D581C /* SolidController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolidController.swift; sourceTree = "<group>"; };
 		B7A2AAD327890EC9009D581C /* ErrorServerHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorServerHandler.swift; sourceTree = "<group>"; };
 		B7A2AAD5278920CC009D581C /* AlamofireManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireManager.swift; sourceTree = "<group>"; };
 		B7A2AAD727892172009D581C /* ServerErrorTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerErrorTypes.swift; sourceTree = "<group>"; };
-		B7A2AADC278938D2009D581C /* FirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreManager.swift; sourceTree = "<group>"; };
-		B7A2AAE227894ACF009D581C /* ServerEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerEntities.swift; sourceTree = "<group>"; };
+		B7A2AADC278938D2009D581C /* FIBFetcherDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIBFetcherDataManager.swift; sourceTree = "<group>"; };
+		B7A2AAE227894ACF009D581C /* ServerRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerRequest.swift; sourceTree = "<group>"; };
 		B7A2AAE4278950C4009D581C /* MoyaManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaManager.swift; sourceTree = "<group>"; };
 		B7A2AAE6278957BE009D581C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B7A2AAEB2789BB83009D581C /* ParseJsonHanlder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseJsonHanlder.swift; sourceTree = "<group>"; };
 		B7A2AAED2789BBD8009D581C /* ParseXMLHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseXMLHandler.swift; sourceTree = "<group>"; };
 		B7A2AAEF2789BCCE009D581C /* ParseDataHanlder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseDataHanlder.swift; sourceTree = "<group>"; };
+		B7A2AAF4278A3775009D581C /* StorageManangerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManangerProtocol.swift; sourceTree = "<group>"; };
+		B7A2AAF7278A3847009D581C /* ServerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerResponse.swift; sourceTree = "<group>"; };
+		B7A2AAFA278A3921009D581C /* FetcherDataProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetcherDataProtocol.swift; sourceTree = "<group>"; };
+		B7A2AAFC278A3BA5009D581C /* FirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreManager.swift; sourceTree = "<group>"; };
+		B7A2AB01278A3D4C009D581C /* FIBRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIBRequest.swift; sourceTree = "<group>"; };
+		B7A2AB03278A3D54009D581C /* FIBResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIBResponse.swift; sourceTree = "<group>"; };
+		B7A2AB05278A3F56009D581C /* FBManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBManagerProtocol.swift; sourceTree = "<group>"; };
+		B7A2AB07278A3FAA009D581C /* HttpMethodTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethodTypes.swift; sourceTree = "<group>"; };
+		B7A2AB09278A49A3009D581C /* OldFirebaseManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldFirebaseManger.swift; sourceTree = "<group>"; };
 		B7D97B3027805B72005C9114 /* MVPArc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVPArc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7D97B3327805B72005C9114 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7D97B3527805B72005C9114 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -134,9 +152,7 @@
 		B7A2AADB27893866009D581C /* ServerModule */ = {
 			isa = PBXGroup;
 			children = (
-				B7A2AAE227894ACF009D581C /* ServerEntities.swift */,
-				B7A2AACC27888F42009D581C /* FetcherDataManager.swift */,
-				B7A2AADC278938D2009D581C /* FirestoreManager.swift */,
+				B7A2AAF9278A3904009D581C /* DataManager */,
 				B7A2AAF22789C867009D581C /* ErrorHandler */,
 				B7A2AAF12789C840009D581C /* Manager */,
 				B7A2AAEA2789BB6D009D581C /* Parser */,
@@ -158,8 +174,8 @@
 		B7A2AAF12789C840009D581C /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				B7A2AAE4278950C4009D581C /* MoyaManager.swift */,
-				B7A2AAD5278920CC009D581C /* AlamofireManager.swift */,
+				B7A2AAFF278A3BFE009D581C /* GoogleManager */,
+				B7A2AAFE278A3BE4009D581C /* HttpServerManager */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -171,6 +187,65 @@
 				B7A2AAD727892172009D581C /* ServerErrorTypes.swift */,
 			);
 			path = ErrorHandler;
+			sourceTree = "<group>";
+		};
+		B7A2AAF6278A3835009D581C /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				B7A2AAE227894ACF009D581C /* ServerRequest.swift */,
+				B7A2AAF7278A3847009D581C /* ServerResponse.swift */,
+				B7A2AB07278A3FAA009D581C /* HttpMethodTypes.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		B7A2AAF9278A3904009D581C /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				B7A2AAFA278A3921009D581C /* FetcherDataProtocol.swift */,
+				B7A2AACC27888F42009D581C /* ServerFetcherDataManager.swift */,
+				B7A2AADC278938D2009D581C /* FIBFetcherDataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		B7A2AAFE278A3BE4009D581C /* HttpServerManager */ = {
+			isa = PBXGroup;
+			children = (
+				B7A2AAF6278A3835009D581C /* Entities */,
+				B7A2AAF4278A3775009D581C /* StorageManangerProtocol.swift */,
+				B7A2AAD5278920CC009D581C /* AlamofireManager.swift */,
+				B7A2AAE4278950C4009D581C /* MoyaManager.swift */,
+			);
+			path = HttpServerManager;
+			sourceTree = "<group>";
+		};
+		B7A2AAFF278A3BFE009D581C /* GoogleManager */ = {
+			isa = PBXGroup;
+			children = (
+				B7A2AB0B278A4A86009D581C /* FBQueryManager */,
+				B7A2AB00278A3CEA009D581C /* Entities */,
+				B7A2AB05278A3F56009D581C /* FBManagerProtocol.swift */,
+				B7A2AAFC278A3BA5009D581C /* FirestoreManager.swift */,
+				B7A2AB09278A49A3009D581C /* OldFirebaseManger.swift */,
+			);
+			path = GoogleManager;
+			sourceTree = "<group>";
+		};
+		B7A2AB00278A3CEA009D581C /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				B7A2AB01278A3D4C009D581C /* FIBRequest.swift */,
+				B7A2AB03278A3D54009D581C /* FIBResponse.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		B7A2AB0B278A4A86009D581C /* FBQueryManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FBQueryManager;
 			sourceTree = "<group>";
 		};
 		B7D97B2727805B72005C9114 = {
@@ -419,28 +494,37 @@
 			files = (
 				B7A2AACB27888EF3009D581C /* SolidVC.swift in Sources */,
 				B7D97B3827805B72005C9114 /* ViewController.swift in Sources */,
+				B7A2AAF5278A3775009D581C /* StorageManangerProtocol.swift in Sources */,
+				B7A2AB02278A3D4C009D581C /* FIBRequest.swift in Sources */,
+				B7A2AAF8278A3847009D581C /* ServerResponse.swift in Sources */,
 				B7A2AAD427890EC9009D581C /* ErrorServerHandler.swift in Sources */,
+				B7A2AB08278A3FAA009D581C /* HttpMethodTypes.swift in Sources */,
 				B7D97B4A278062AD005C9114 /* CountryViewController.swift in Sources */,
 				B7A2AAEC2789BB83009D581C /* ParseJsonHanlder.swift in Sources */,
 				B7D97B5B278076DC005C9114 /* CountryVC+TableView.swift in Sources */,
 				B7A2AACF27889471009D581C /* ParseProcotol.swift in Sources */,
 				B7D97B5927806F4F005C9114 /* CountryPresenter.swift in Sources */,
 				B7A2AAD227890BD4009D581C /* SolidController.swift in Sources */,
-				B7A2AADD278938D2009D581C /* FirestoreManager.swift in Sources */,
-				B7A2AACD27888F42009D581C /* FetcherDataManager.swift in Sources */,
+				B7A2AADD278938D2009D581C /* FIBFetcherDataManager.swift in Sources */,
+				B7A2AACD27888F42009D581C /* ServerFetcherDataManager.swift in Sources */,
 				B7D97B4F2780634E005C9114 /* CountryModel.swift in Sources */,
 				B7A2AAF02789BCCE009D581C /* ParseDataHanlder.swift in Sources */,
+				B7A2AAFD278A3BA5009D581C /* FirestoreManager.swift in Sources */,
 				B7A2AAE5278950C4009D581C /* MoyaManager.swift in Sources */,
 				B7D97B62278077E3005C9114 /* CountryProtocol.swift in Sources */,
+				B7A2AB06278A3F56009D581C /* FBManagerProtocol.swift in Sources */,
 				B7D97B4C278062DC005C9114 /* CountryController.swift in Sources */,
 				B7D97B3427805B72005C9114 /* AppDelegate.swift in Sources */,
 				B7A2AAD827892172009D581C /* ServerErrorTypes.swift in Sources */,
+				B7A2AB04278A3D54009D581C /* FIBResponse.swift in Sources */,
 				B7A2AAC827887F45009D581C /* CountryListViewController.swift in Sources */,
+				B7A2AB0A278A49A4009D581C /* OldFirebaseManger.swift in Sources */,
 				B7D97B5F2780774F005C9114 /* CountryVC+LoadList.swift in Sources */,
 				B7D97B3627805B72005C9114 /* SceneDelegate.swift in Sources */,
 				B7A2AAD6278920CC009D581C /* AlamofireManager.swift in Sources */,
-				B7A2AAE327894ACF009D581C /* ServerEntities.swift in Sources */,
+				B7A2AAE327894ACF009D581C /* ServerRequest.swift in Sources */,
 				B7A2AAEE2789BBD8009D581C /* ParseXMLHandler.swift in Sources */,
+				B7A2AAFB278A3921009D581C /* FetcherDataProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

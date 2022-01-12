@@ -11,17 +11,9 @@ class ServerRequest {
     var baseURL: String?
     var apiPath: String?
     var apiUrl: String?
-    var apiName: ApiName?
+    var apiName: String?
     var method: HttpMethod?
     var paramters: [String: Any]?
     var headers: [String: String]?
 }
 
-class ServerResponse {
-    var success: ((Data?)->())?
-    var failure: ((ServerError)->())?
-}
-
-enum ApiName {
-    case getCountries
-}

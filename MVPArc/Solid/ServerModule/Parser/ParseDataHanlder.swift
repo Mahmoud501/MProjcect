@@ -21,6 +21,16 @@ class ParseDataHanlder {
     init(parser: ParseProtocol?) {
         self.parser = parser
     }
+    init(type: ParseType? = nil) {
+        switch type {
+        case .json:
+            self.parser = ParseJsonHandler()
+        case .xml:
+            self.parser = ParseXMLHandler()
+        case .none:
+            print("not support these")
+        }
+    }
     
     func parse(type: ParseType? = nil, data: Data?) -> [String: Any]? {
         if parser != nil {
@@ -28,11 +38,9 @@ class ParseDataHanlder {
         }else {
             switch type {
             case .json:
-                let newParser = ParseJsonHandler()
-                return newParser.parse(data: data)
+                return ParseJsonHandler().parse(data: data)
             case .xml:
-                let newParser = ParseXMLHandler()
-                return newParser.parse(data: data)
+                return ParseXMLHandler().parse(data: data)
             case .none:
                 return nil
             }
